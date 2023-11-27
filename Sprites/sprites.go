@@ -9,7 +9,8 @@ import (
 )
 
 //go:embed *
-var assets embed.FS
+var asset embed.FS
+
 var ebitenBullet = mustLoadImage("Sprite-00010.png")
 var player1FullSprites = mustLoadImages("player1Full/*.png")
 var player1HalfSprites = mustLoadImages("player1Half/*.png")
