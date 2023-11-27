@@ -34,7 +34,7 @@ func mustLoadImage(name string) *ebiten.Image {
 	return ebiten.NewImageFromImage(img)
 }
 func mustLoadImages(path string) []*ebiten.Image {
-	matches, err := fs.Glob(assets, path)
+	matches, err := fs.Glob(asset, path)
 	if err != nil {
 		panic(err)
 	}
