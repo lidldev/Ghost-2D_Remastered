@@ -20,7 +20,7 @@ var player2HalfSprites = mustLoadImages("player2Half/*.png")
 var player2LowSprites = mustLoadImages("player2Half/*.png")
 
 func mustLoadImage(name string) *ebiten.Image {
-	f, err := assets.Open(name)
+	f, err := asset.Open(name)
 	if err != nil {
 		panic(err)
 	}
