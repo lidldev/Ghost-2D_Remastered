@@ -12,13 +12,13 @@ import (
 //go:embed *
 var asset embed.FS
 
-var ebitenBullet = mustLoadImage("Sprite-00010.png")
-var player1FullSprites = mustLoadImages("player1Full/*.png")
-var player1HalfSprites = mustLoadImages("player1Half/*.png")
-var player1LowSprites = mustLoadImages("player1Low/*.png")
-var player2FullSprites = mustLoadImages("player2Full/*.png")
-var player2HalfSprites = mustLoadImages("player2Half/*.png")
-var player2LowSprites = mustLoadImages("player2Half/*.png")
+var EbitenBullet = mustLoadImage("Sprite-00010.png")
+var Player1FullSprites = mustLoadImages("player1Full/*.png")
+var Player1HalfSprites = mustLoadImages("player1Half/*.png")
+var Player1LowSprites = mustLoadImages("player1Low/*.png")
+var Player2FullSprites = mustLoadImages("player2Full/*.png")
+var Player2HalfSprites = mustLoadImages("player2Half/*.png")
+var Player2LowSprites = mustLoadImages("player2Half/*.png")
 
 func mustLoadImage(name string) *ebiten.Image {
 	f, err := asset.Open(name)
