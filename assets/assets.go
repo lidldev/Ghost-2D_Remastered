@@ -48,4 +48,3 @@ func mustLoadImages(path string) []*ebiten.Image {
 
 	return images
 }
-
